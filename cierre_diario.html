@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reporte de Ventas</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 75%;
+			left: 75%;
+			margin-bottom: 20px;
+		}
+		
+		th, td {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: left;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		th {
+			background-color: #d3d3d3;
+		}
+
+		select, input[type="text"] {
+			font-size: 16px;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+		input[type="number"] {
+			font-size: 16px;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			margin-bottom: 10px;
+			text-align: right;
+		}
+
+		input[type="date"] {
+			font-size: 16px;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 10px;
+		}
+
+		textarea {
+			font-size: 16px;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			height: 100px;
+			resize: vertical;
+			margin-bottom: 10px;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+
+		.grand-total {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: right;
+			padding-right: 10px;
+		}
+
+		.anticipos {
+			margin-top: 30px;
+			font-weight: bold;
+			font-size: 18px;
+		}
+
+	</style>
+</head>
+<body>
+	<table>
+  <tr>
+    <td>Fecha:</td>
+    <td><input type="date" name="fecha"></td>
+  </tr>
+  <tr>
+    <td>Restaurante:</td>
+    <td>
+      <select name="restaurante">
+        <option value="Lobby">Lobby</option>
+        <option value="Querida">Querida</option>
+        <option value="Bichos">Bichos</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Nombre del Cajero:</td>
+    <td><input type="text" name="cajero"></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td>TOTAL EFECTIVO:</td>
+    <td><input type="number" name="efectivo" step="0.01"></td>
+  </tr>
+  <tr>
+    <td>PEDIDOS YA:</td>
+    <td><input type="number" name="pedidos" step="0.01"></td>
+  </tr>
+  <tr>
+    <td>CUENTAS POR COBRAR:</td>
+    <td><input type="number" name="cuentas" step="0.01"></td>
+  </tr>
+  <tr>
+    <td>TEIP:</td>
+    <td><input type="number" name="teip" step="0.01"></td>
+  </tr>
+  <tr>
+    <td>GIFT CARD / CERTIFICADO DE REGALO:</td>
+    <td><input type="number" name="giftcard" step="0.01"></td>
+  </tr>
+  <tr>
+    <td>PROPINA DEL DIA:</td>
+    <td><input type="number" name="propina" step="0.01"></td>
+  </tr>
+  <tr>
+    <td>T. CRE Y DEB PROMERICA:</td>
+    <td><input type="number" name="promerica" step="0.01"></td>
+  </tr>
+  <tr>
+    <td>T. CRE Y DEB CUSCATLAN:</td>
+    <td><input type="number" name="cuscatlan" step="0.01"></td>
+  </tr>
+  <tr>
+    <td>T. CRE Y DEB CREDOMATIC:</td>
+    <td><input type="number" name="credomatic" step="0.01"></td>
+  </tr>
+   <tr>
+    <td>GRAN TOTAL:</td>
+    <td><input type="number" name="total" step="0.01" readonly></td>
+  </tr>
+ <tr>
+    <td>ANTICIPOS DE EVENTOS FUTUROS:</td>
+    <td><input type="number" name="eventosfuturos" step="0.01"></td>
+  </tr>
+</table>
+</body>
+</html>
